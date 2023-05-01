@@ -1,0 +1,202 @@
+@import '../mixins/mixins';
+@import '../variable/variable';
+
+/*= ===================================================
+               menu part start
+====================================================*/
+
+#main_menu {
+    background: #fff;
+
+    .ftag {
+        height: 40px;
+        position: relative;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $clr1;
+
+            span {
+                font-weight: 600;
+                font-size: 12px;
+            }
+
+            i {
+                line-height: 40px;
+                margin-left: 15px;
+            }
+        }
+
+        background: red;
+
+        h3 {
+            font-size: 12px;
+            font-weight: 600;
+            font-family: $fp;
+            text-transform: uppercase;
+            line-height: 40px;
+            margin-left: 5px;
+            margin-right: 50px;
+        }
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 0;
+        }
+        .first_mid {
+            i{
+                font-size: 12px ;
+            }
+            background: $clr2;
+            &:hover{
+                .side_man{
+                   transform: scaleZ(1);
+                   margin-left: 5%;
+                   transition: all linear .3s;
+                }
+           
+            }
+            position: relative;
+            .side_man{
+                position: absolute;
+                top: 0;
+                left:95%;
+                width: 688px;
+                height: 336px;
+                background: #fff;
+                box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.096);
+                z-index: 999999;
+                transform: scaleZ(0);
+                .side_menu{
+                    ul{
+                        li{
+                            a{
+                               &:hover{
+                                color: $hov;
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            a {
+                font-size: 12px;
+                font-weight: 600;
+                font-family: $fp;
+                text-transform: uppercase;
+                line-height: 40px;
+                margin-left: 5px;
+
+                .fa-chevron-right {
+                    margin-left: -15px;
+                    transition: all linear .3s;
+                }
+            }
+
+            &:Hover {
+                .fa-chevron-right {
+                    margin-left:0;
+                }
+            }
+
+            .font {
+                position: relative;
+                .material-icons {
+                    position: absolute;
+                    right: 16px;
+                    top: 11px;
+                }
+            }
+        }
+    }
+    .fasion_menu {
+        line-height: 40px;
+        height: 40px;
+        background: floralwhite;
+
+        ul {
+            margin-bottom: 0;
+
+            li {
+                margin-right: 50px;
+
+                .active {
+                    color: red;
+                    background: #74690c;
+
+                    &::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
+                }
+
+                a {
+                    &::after {
+                        @include manu(0, 0, 100%, 2px, red);
+                        transition: transform 0.3s;
+                        transform: scaleX(0);
+                        transform-origin: bottom right;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+
+                    }
+
+                    text-decoration: none;
+                    display: inline-block;
+                    position: relative;
+                }
+
+            }
+
+        }
+    }
+
+    .last_menu {
+        ul {
+            li {
+                margin-right: 20px;
+                line-height: 40px;
+
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: $fp;
+                    text-decoration: none;
+                    color: $clr1;
+
+                    i {
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $hov;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*= ===================================================
+               menu part end
+====================================================*/
+/*= ===================================================
+               menu part end
+====================================================*/

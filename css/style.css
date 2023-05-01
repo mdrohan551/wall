@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+/*= ===================================================
+               common css  end
+====================================================*/
+/*= ===================================================
+               header part start
+====================================================*/
+#header {
+  background: red;
+  height: 40px;
+}
+#header .header_left p {
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+#header .head_crncy ul li {
+  position: relative;
+}
+#header .head_crncy ul li img {
+  margin: 0 5px;
+}
+#header .head_crncy ul li a {
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#header .head_crncy ul li a:hover {
+  color: #336699;
+}
+#header .head_crncy ul li ul {
+  position: absolute;
+  content: "";
+  left: -9px;
+  top: 5px;
+  padding: 5px 5px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.339);
+  z-index: 999;
+  transform: scaleZ(0);
+}
+#header .head_crncy ul li ul::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: translate(-50%);
+  -webkit-clip-path: polygon(50% 0%, 1% 49%, 100% 49%);
+          clip-path: polygon(50% 0%, 1% 49%, 100% 49%);
+  border: 1px #cacaca;
+  z-index: -999;
+}
+#header .head_crncy ul li:hover ul {
+  transform: scaleZ(1);
+  margin-top: 8px;
+  position: relative;
+  transition: all linear 0.2s;
+}
+#header .head_crncy:after {
+  position: absolute;
+  content: "";
+  left: 63%;
+  top: 9.9px;
+  width: 1px;
+  height: 20px;
+  background: rgba(102, 102, 102, 0.1607843137);
+  color: none;
+}
+#header .header_menu ul li a {
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 0 10px;
+  line-height: 40px;
+  text-decoration: none;
+}
+#header .header_menu ul li a:hover {
+  color: #336699;
+}
+#header .sing_reg ul li {
+  margin: 0 7px;
+  position: relative;
+}
+#header .sing_reg ul li a {
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 40px;
+}
+#header .sing_reg ul li a:hover {
+  color: #336699;
+}
+#header .sing_reg::before {
+  position: absolute;
+  content: "";
+  left: 56%;
+  top: 13.9px;
+  width: 1px;
+  height: 15px;
+  background: rgba(37, 37, 37, 0.8274509804);
+  color: none;
+  transform: rotate(21deg);
+}
+#header .sing_reg .modal-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 520px;
+}
+#header .sing_reg {
+  position: relative;
+}
+#header .sing_reg .cros {
+  position: absolute;
+  right: 0px;
+  top: -20px;
+  color: white;
+  font-size: 20px;
+  transition: all linear 0.3s;
+}
+#header .sing_reg .cros:hover {
+  transform: rotate(-90deg);
+  font-size: 25px;
+  top: -25px;
+}
+#header .sing_reg .cros .modal-dialog {
+  max-width: var(--bs-modal-width);
+  margin-right: 50% !important;
+  margin-left: 50% !important;
+  margin-top: 50% !important;
+  margin-bottom: 50% !important;
+}
+#header .sing_reg .main_nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+#header .sing_reg .nav-pills .nav-link.active {
+  color: #336699;
+  background-color: transparent;
+}
+#header .sing_reg .nav-pills .nav-link.active::after {
+  right: 0;
+  position: absolute;
+  content: "";
+  left: -90px;
+  top: 71px;
+  width: 264px;
+  height: 3px;
+  background: red;
+  color: none;
+}
+#header .but {
+  width: 100%;
+  height: 40px;
+  background: #336699;
+  text-align: center;
+  line-height: 40px;
+}
+#header .but button {
+  background: transparent;
+  border: 0;
+}
+#header .but a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+#header .sing_in {
+  position: relative;
+  padding: 20px;
+}
+#header .sing_in::before {
+  right: 0;
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 0;
+  width: 92%;
+  height: 1px;
+  background: #3a3a3a;
+  color: #000;
+  transform: rotate(0);
+}
+#header .sing_in .form-control {
+  border: 1px solid #eee;
+  font-family: Poppins, sans-serif;
+  color: #999;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+#header .sing_in .between {
+  justify-content: space-between;
+}
+#header .sing_in .pas {
+  color: rgba(51, 51, 51, 0.8823529412);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#header .sing_in .ema {
+  color: rgba(51, 51, 51, 0.8823529412);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#header .sing_in .ling2 .m5px {
+  margin-right: 5px;
+}
+#header .sing_in .ling2 .ffml {
+  color: rgba(51, 51, 51, 0.8823529412);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#header .sing_in .form-check {
+  padding-left: 1 !important;
+}
+#header .sing_in .ling a {
+  color: #a94442;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: red;
+  text-transform: uppercase;
+}
+#header .sing_in .ling a:hover {
+  text-decoration-line: underline;
+}
+
+/*= ===================================================
+               header part end
+====================================================*/
+/*= ===================================================
+               logo part start
+====================================================*/
+#logo {
+  padding: 26px 0 0;
+  background: #fff;
+  border-bottom: 1px solid rgb(43, 42, 42);
+}
+#logo .logo a img {
+  width: 150px;
+  line-height: 110px;
+}
+#logo .logo_mid form {
+  border: 1px solid rgb(5, 3, 3);
+  height: 46px;
+  position: relative;
+}
+#logo .logo_mid form select {
+  border: 0;
+  border-right: 1px solid green;
+  background: transparent;
+  height: 35px;
+  padding-left: 10px;
+}
+#logo .logo_mid form input {
+  border: 0;
+  background: transparent;
+  height: 46px;
+  outline: 0;
+}
+#logo .logo_mid button {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  content: "";
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#logo .logo_mid button i {
+  font-size: 20px;
+}
+#logo .wisher {
+  position: relative;
+}
+#logo .wisher::after {
+  position: absolute;
+  content: "";
+  left: 191px;
+  top: 6%;
+  width: 2px;
+  height: 40px;
+  background: green;
+  color: green;
+}
+#logo .wisher a {
+  text-decoration: none;
+  position: relative;
+  padding-left: 40px;
+  color: #3a3a3a;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#logo .wisher a:hover {
+  color: #336699;
+}
+#logo .wisher a p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+#logo .wisher a h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+#logo .wisher i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+#logo .compere ul {
+  margin-bottom: 0;
+  line-height: 1;
+}
+#logo .compere ul li a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+#logo .compere ul li a p {
+  padding: 0;
+}
+#logo .compere ul li a:hover {
+  color: #336699;
+}
+#logo .compere ul li a i {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.width {
+  width: 358px !important;
+}
+
+/*= ===================================================
+               logo part end
+====================================================*/
+/*= ===================================================
+               logo part start
+====================================================*/
+/*= ===================================================
+               logo part end
+====================================================*/
+/*= ===================================================
+               menu part start
+====================================================*/
+#main_menu {
+  background: #fff;
+}
+#main_menu .ftag {
+  height: 40px;
+  position: relative;
+  background: red;
+}
+#main_menu .ftag a {
+  display: inline-block;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+#main_menu .ftag a span {
+  font-weight: 600;
+  font-size: 12px;
+}
+#main_menu .ftag a i {
+  line-height: 40px;
+  margin-left: 15px;
+}
+#main_menu .ftag h3 {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-left: 5px;
+  margin-right: 50px;
+}
+#main_menu .ftag .h1, #main_menu .ftag .h2, #main_menu .ftag .h3, #main_menu .ftag .h4, #main_menu .ftag .h5, #main_menu .ftag .h6, #main_menu .ftag h1, #main_menu .ftag h2, #main_menu .ftag h3, #main_menu .ftag h4, #main_menu .ftag h5, #main_menu .ftag h6 {
+  margin-bottom: 0;
+}
+#main_menu .ftag .first_mid {
+  background: #f5f6f8;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+#main_menu .ftag .first_mid i {
+  font-size: 12px;
+}
+#main_menu .ftag .first_mid:hover .side_man {
+  transform: scaleZ(1);
+  margin-left: 5%;
+  transition: all linear 0.3s;
+}
+#main_menu .ftag .first_mid .side_man {
+  position: absolute;
+  top: 0;
+  left: 95%;
+  width: 688px;
+  height: 336px;
+  background: #fff;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.096);
+  z-index: 999999;
+  transform: scaleZ(0);
+}
+#main_menu .ftag .first_mid .side_man .side_menu ul li a:hover {
+  color: #336699;
+}
+#main_menu .ftag .first_mid:last-child {
+  border-bottom: 0;
+}
+#main_menu .ftag .first_mid a {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-left: 5px;
+}
+#main_menu .ftag .first_mid a .fa-chevron-right {
+  margin-left: -15px;
+  transition: all linear 0.3s;
+}
+#main_menu .ftag .first_mid:Hover .fa-chevron-right {
+  margin-left: 0;
+}
+#main_menu .ftag .first_mid .font {
+  position: relative;
+}
+#main_menu .ftag .first_mid .font .material-icons {
+  position: absolute;
+  right: 16px;
+  top: 11px;
+}
+#main_menu .fasion_menu {
+  line-height: 40px;
+  height: 40px;
+  background: floralwhite;
+}
+#main_menu .fasion_menu ul {
+  margin-bottom: 0;
+}
+#main_menu .fasion_menu ul li {
+  margin-right: 50px;
+}
+#main_menu .fasion_menu ul li .active {
+  color: red;
+  background: #74690c;
+}
+#main_menu .fasion_menu ul li .active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#main_menu .fasion_menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+#main_menu .fasion_menu ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: red;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+#main_menu .fasion_menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#main_menu .last_menu ul li {
+  margin-right: 20px;
+  line-height: 40px;
+}
+#main_menu .last_menu ul li:nth-child(2) {
+  margin-right: 0;
+}
+#main_menu .last_menu ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+#main_menu .last_menu ul li a i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+#main_menu .last_menu ul li a:hover {
+  color: #336699;
+}
+
+/*= ===================================================
+               menu part end
+====================================================*/
+/*= ===================================================
+               menu part end
+====================================================*//*# sourceMappingURL=style.css.map */

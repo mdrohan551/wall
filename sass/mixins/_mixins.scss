@@ -1,0 +1,72 @@
+@mixin fst($c,$fz,$fw,$fp){
+  color:$c;
+  font-size: $fz;
+  font-weight: $fw;
+  font-family: $fp;
+  text-transform: uppercase;
+};
+
+
+
+@mixin after1($l,$t,$w,$h,$bg,$col){
+  position: absolute;
+  content: '';
+  left: $l;
+  top: $t;
+  width: $w;
+  height: $h;
+  background: $bg;
+  color: $col;
+}
+@mixin manu($l,$b,$w,$h,$bg){
+  position: absolute;
+  content: '';
+  left: $l;
+  bottom: $b; 
+  width: $w;
+  height: $h;
+  background: $bg;
+}
+@mixin manu1($l,$b,$w,$h,$bg){
+  position: absolute;
+  content: '';
+  left: $l;
+  bottom: $b; 
+  width: $w;
+  height: $h;
+  background: $bg;
+}
+
+
+@mixin before1($l,$t,$w,$h,$bg,$col){
+  position: absolute;
+  content: '';
+  left: $l;
+  top: $t;
+  width: $w;
+  height: $h;
+  background: $bg;
+  color: $col;
+  transform: rotate(0);
+}
+
+
+@mixin after2($l,$t,$w,$h,$bg,$col){
+  position: absolute;
+  content: '';
+  left: $l;
+  top: $t;
+  width: $w;
+  height: $h;
+  background: $bg;
+  color: $col;
+  transform: rotate(21deg);
+}
+@mixin icon1($r,$t){
+  position: absolute;
+  content: '';
+  right: $r;
+  top: $t;
+  transform: translateY(-50%);
+}
+

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wolmart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.rprogessbar.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main_menu" data-bs-offset="0">
+    <!-- header part start -->
+    <header id="header">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="header_left">
+                        <p>Welcome to Wolmart Store message or remove it!</p>
+                    </div>
+                </div>
+                <!-- header right start -->
+
+                <div class="col-lg-8">
+                    <div class="header_right d-flex flex-wrap justify-content-end">
+                        <div class="head_crncy  ">
+                            <ul>
+                                <li>
+                                    <a href="#">USD
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">usd</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ero</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="head_crncy ">
+                            <ul>
+                                <li>
+                                    <a href="#">ENG<img src="images/menuflag/eng.png" alt="">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">ENG<img src="images/menuflag/eng.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FRA<img src="images/menuflag/eng.png" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header_menu">
+                            <ul class=" d-flex">
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        MY acount</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sing_reg">
+                            <ul class="d-flex">
+                                <li>
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">
+                                        <i class="fas fa-user"></i>
+                                        sign</a>
+                                </li>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog mazkan">
+                                        <div class="modal-content ">
+                                            <i data-bs-dismiss="modal" class="fas fa-times cros"></i>
+                                            <ul class="nav nav-pills mb-3 main_nav " id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                        role="tab" aria-controls="pills-home" aria-selected="true">
+                                                        <p>sign in</p>
+                                                    </button>
+                                                </li>
+
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                        type="button" role="tab" aria-controls="pills-profile"
+                                                        aria-selected="false">
+                                                        <div class="p">
+                                                            sign up
+                                                        </div>
+                                                    </button>
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="tab-content sing_in" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                    aria-labelledby="pills-home-tab">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1" class="form-label ema">Email
+                                                                address</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                                required>
+
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label pas">Password</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1" required>
+                                                        </div>
+                                                        <div class="mb-3 form-check d-flex between">
+                                                            <div class="ling2">
+                                                                <input type="checkbox" class="form-check-input m5px"
+                                                                    id="exampleCheck1">
+                                                                <label class="form-check-label ffml"
+                                                                    for="exampleCheck1">Remember me</label>
+                                                            </div>
+                                                            <div class="ling">
+                                                                <a href="#">Last your password?</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="but">
+                                                            <button type="submit">
+                                                                <a href="#">submit</a>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                    aria-labelledby="pills-profile-tab">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1" class="form-label ema">Email
+                                                                address</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label pas">Password</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="mb-3 form-check d-flex between flex-wrap">
+                                                            <div class="ling2">
+                                                                <input type="checkbox" class="form-check-input m5px"
+                                                                    id="exampleCheck1">
+                                                                <label class="form-check-label ffml"
+                                                                    for="exampleCheck1">Remember me</label>
+                                                            </div>
+                                                            <div class="ling">
+                                                                <a href="#">Last your password?</a>
+                                                            </div>
+                                                            <div class="prive">
+                                                                <p>Your personal data will be used to support your
+                                                                    experience throughout this
+                                                                    website, to manage access to your account, and for
+                                                                    other purposes described in
+                                                                    our
+                                                                    <a href="#">privacy policy.</a>
+                                                                </p>
+                                                                <a href="#">Signup as a vendor?</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="but">
+                                                            <button type="submit">
+                                                                <a href="#">submit</a>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <li>
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">
+                                        registar</a>
+                                </li>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog mazkan">
+                                        <div class="modal-content ">
+                                            <i data-bs-dismiss="modal" class="fas fa-times cros"></i>
+                                            <ul class="nav nav-pills mb-3 main_nav " id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-home" type="button" role="tab"
+                                                        aria-controls="pills-home" aria-selected="true">
+                                                        <p>sign in</p>
+                                                    </button>
+                                                </li>
+
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                        type="button" role="tab" aria-controls="pills-profile"
+                                                        aria-selected="false">
+                                                        <div class="p">
+                                                            sign up
+                                                        </div>
+                                                    </button>
+                                                </li>
+
+                                            </ul>
+
+                                            <div class="tab-content sing_in" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                    aria-labelledby="pills-home-tab">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1" class="form-label ema">Email
+                                                                address</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label pas">Password</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1" required>
+                                                        </div>
+                                                        <div class="mb-3 form-check d-flex between">
+                                                            <div class="ling2">
+                                                                <input type="checkbox" class="form-check-input m5px"
+                                                                    id="exampleCheck1">
+                                                                <label class="form-check-label ffml"
+                                                                    for="exampleCheck1">Remember me</label>
+                                                            </div>
+                                                            <div class="ling">
+                                                                <a href="#">Last your password?</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="pills-profile" <form>
+                                                    <div class="mb-3"> <label for="exampleInputEmail1"
+                                                            class="form-label ema"> address</label> <input type="email"
+                                                            class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" required> </div>
+                                                    <div class="mb-3"> <label for="exampleInputPassword1"
+                                                            class="form-label pas"> Password</label> <input
+                                                            type="password" class="form-control"
+                                                            id="exampleInputPassword1"> </div>
+                                                    <div class="mb-3 form-check d-flex between">
+                                                        <div class="ling2"> <input type="checkbox"
+                                                                class="form-check-input m5px" id="exampleCheck1"> <label
+                                                                class="form-check-label ffml" for="exampleCheck1">
+                                                                me</label> </div>
+                                                        <div class="ling"> <a href="#"> your password?</a> </div>
+                                                    </div> <button type="submit"> <a href="#"> Remember Last submit</a>
+                                                    </button> </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- header right end -->
+            </div>
+        </div>
+    </header> <!-- header part end -->
+    <!-- logo part start -->
+    <section id="logo">
+        <div class="container px-lg-0 line">
+            <div class="row">
+                <!-- logo first start-->
+                <div class="col-lg-2 ">
+                    <div class="logo"> <a href="#"><img src="images/logo/logo.png" alt="logo" Email><img></a>
+                    </div>
+                </div>
+                <!-- logo first end -->
+                <!-- logo mid start -->
+                <div class="col-lg-5">
+                    <div class="logo_mid">
+                        <form>
+                            <select>
+                                <option>
+                                    All Categories</option>
+                                <option>
+                                    All fashion</option>
+                                <option>
+                                    All tecnical</option>
+                                <option>
+                                    All shows</option>
+                                <option>
+                                    All t shirt</option>
+                                <option>
+                                    All Categories</option>
+                                <option>
+                                    All Categories</option>
+                            </select>
+                            <input type="search" placeholder="search in">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- logo mid end -->
+                <!-- logo last start -->
+                <div class="col-lg-5 d-flex justify-content-end">
+                    <div class="row">
+                        <div class="col-lg-6 ">
+                            <div class="wisher">
+                                <a href="#">
+                                    <p>Live Chat or :</p>
+                                    <h5>0(800)123-456</h5>
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="compere">
+                                <ul class="d-flex text-center">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-heart"></i>
+                                            <p>wisher</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="material-icons">
+                                                balance
+                                            </span>
+                                            <p>wisher</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight" href="#">
+                                            <span class="material-icons">
+                                                work_outline
+                                            </span>
+                                            <p>wisher</p>
+                                        </a>
+                                    </li>
+
+                                    <div class="offcanvas offcanvas-end width" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel">Shopping Cart
+                                            </h5>
+                                            <a data-bs-dismiss="offcanvas" aria-label="Close" href="#">close <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            ...
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- logo last end -->
+            </div>
+        </div>
+    </section>
+    <!-- logo part end -->
+
+
+    <!-- fashion menu part start -->
+    <section id="main_menu">
+        <div class="container px-lg-0 ">
+            <div class="row d-flex justify-content-between">
+                <!-- categories start -->
+
+                <div class="col-lg-3">
+                    <div class="ftag d-flex flex-wrap">
+                        <a href="#"><i class="material-icons">list</i></a>
+                        <a href="#">
+                            <h3>Browse Categories</h3>
+                        </a>
+                        <a href="#"><span><i class="fas fa-chevron-down"></i></span></a>
+                        <div class="first_mid">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <a href="#"><i class="fas fa-tshirt"></i></a>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="font">
+                                        <a href="#">
+                                            <p>Browse Categories</p>
+                                        </a>
+                                    </div>
+                                    <div class="side_man">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="side_menu">
+                                                    <ul>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="side_menu">
+                                                    <ul>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                        <li><a href="#">home</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="side_menu">
+                                                   <a href="#">
+                                                    <img src="images/side.jpg/banner-4.jpg" style="height: 336px; width: 237px; right: 0;" alt="">
+                                                   </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                        <div class="side_man">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                        <ul>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                        <ul>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                       <a href="#">
+                                                        <img src="images/side.jpg/banner-4.jpg" style="height: 336px; width: 237px; right: 0;" alt="">
+                                                       </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                        <div class="side_man">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                        <ul>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                        <ul>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                       <a href="#">
+                                                        <img src="images/side.jpg/banner-4.jpg" style="height: 336px; width: 237px; right: 0;" alt="">
+                                                       </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                        <div class="side_man">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                        <ul>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                        <ul>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                            <li><a href="#">home</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="side_menu">
+                                                       <a href="#">
+                                                        <img src="images/side.jpg/banner-4.jpg" style="height: 336px; width: 237px; right: 0;" alt="">
+                                                       </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p>Browse Categories</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="first_mid">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <a href="#"><i class="fas fa-tshirt"></i></a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="font">
+                                            <a href="#">
+                                                <p style="color: #336699;">View All Categories </p>
+                                            </a>
+                                            <span style="color: #336699;" class="material-icons">
+                                                chevron_right
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- categories end -->
+                    <!-- menu start -->
+
+                    <div class="col-lg-6">
+                        <div class="fasion_menu d-flex justify-content-center">
+                            <ul class="d-flex">
+                                <li><a href="#logo">Home</a></li>
+                                <li><a href="#header">Shop</a></li>
+                                <li><a href="#main_menu">Vendor</a></li>
+                                <li><a href="#blogs">Blogs</a></li>
+                                <li><a href="#contatct">Contact</a></li>
+                                <li><a href="#">Elements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- menu end -->
+                    <!-- location start  -->
+                    <div class="col-lg-3">
+                        <div class="last_menu ">
+                            <ul class="d-flex justify-content-between">
+                                <li> <a href="#"><i class="fas fa-id-card"></i>Daily Deals</a></li>
+                                <li> <a href="#"><i class="fas fa-location-dot"></i>Track Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- location end  -->
+                </div>
+            </div>
+    </section>
+    <!-- fashion menu part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+    <!-- header part start -->
+    <!-- header part end -->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+</body>
+
+</html>

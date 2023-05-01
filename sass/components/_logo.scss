@@ -1,0 +1,136 @@
+@import '../mixins/mixins';
+@import '../variable/variable';
+
+/*= ===================================================
+               logo part start
+====================================================*/
+
+#logo {
+   padding:26px 0 0;
+    background: #fff;
+    border-bottom: 1px solid rgb(43, 42, 42);
+    .logo {
+        a {
+            img {
+                width: 150px;
+                line-height: 110px;
+            }
+        }
+    }
+
+    .logo_mid {
+        form {
+            border: 1px solid rgb(5, 3, 3);
+            height: 46px;
+            position: relative;
+
+            select {
+                border: 0;
+                border-right: 1px solid green;
+                background: transparent;
+                height: 35px;
+                padding-left: 10px;
+            }
+
+            input {
+                border: 0;
+                background: transparent;
+                height: 46px;
+                outline: 0;
+            }
+        }
+
+        button {
+            border: 0;
+            background: transparent;
+            @include icon1(15px, 50%);
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // contact= firts===============>
+    .wisher {
+        position: relative;
+
+        &::after {
+            @include after1(191px, 6%, 2px, 40px, green, green)
+        }
+
+        a {
+            &:hover{
+               color: $hov;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+
+            h5 {
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            text-decoration: none;
+            position: relative;
+            padding-left: 40px;
+            @include fst($clr1, 15px, 700, $fp)
+            
+        }
+
+        i {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+        }
+    }
+
+    // contact= firts==== end===========>
+    // contact= last==== start===========>
+         .compere{
+            ul{
+                margin-bottom: 0;
+                line-height: 1;
+                li{
+                    a{
+                        p{
+                           padding: 0;
+                        }
+                        &:hover{
+                            color: $hov;
+                        }
+                        i{
+                            font-size: 1.7rem;
+                            font-weight: normal;
+                        }
+                        margin-right: 10px;
+                        text-decoration: none;
+                        @include fst($clr1,12px, 400, $fp)
+                    }
+                }
+            }
+         }
+
+    // contact= last==== end===========>
+
+}.width {
+
+	width: 358px !important;
+
+}
+
+
+/*= ===================================================
+               logo part end
+====================================================*/
+/*= ===================================================
+               logo part start
+====================================================*/
+/*= ===================================================
+               logo part end
+====================================================*/
